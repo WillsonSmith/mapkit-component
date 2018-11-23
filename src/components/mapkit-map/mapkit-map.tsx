@@ -36,7 +36,7 @@ export class MapkitMap {
 
   private addPin(pin) {
     const { latitude, longitude, draggable, selected, color, title } = pin;
-    const point = new mapkit.MarkerAnnotation(
+    const point = new mapkit.MarkerAnnotation( //add some sort of event manager to add/remove drag/select events
       new mapkit.Coordinate(latitude, longitude),
       {
         draggable,
