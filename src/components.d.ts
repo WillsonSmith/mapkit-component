@@ -48,30 +48,17 @@ export namespace Components {
     'pinTitle'?: string;
     'selected'?: boolean;
   }
-
-  interface MyComponent {
-    'first': string;
-    'last': string;
-    'middle': string;
-  }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
-    'first'?: string;
-    'last'?: string;
-    'middle'?: string;
-  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'MapkitMap': Components.MapkitMap;
     'MapkitPin': Components.MapkitPin;
-    'MyComponent': Components.MyComponent;
   }
 
   interface StencilIntrinsicElements {
     'mapkit-map': Components.MapkitMapAttributes;
     'mapkit-pin': Components.MapkitPinAttributes;
-    'my-component': Components.MyComponentAttributes;
   }
 
 
@@ -87,22 +74,14 @@ declare global {
     new (): HTMLMapkitPinElement;
   };
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
-
   interface HTMLElementTagNameMap {
     'mapkit-map': HTMLMapkitMapElement
     'mapkit-pin': HTMLMapkitPinElement
-    'my-component': HTMLMyComponentElement
   }
 
   interface ElementTagNameMap {
     'mapkit-map': HTMLMapkitMapElement;
     'mapkit-pin': HTMLMapkitPinElement;
-    'my-component': HTMLMyComponentElement;
   }
 
 

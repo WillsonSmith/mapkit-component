@@ -1,13 +1,13 @@
-import { Config } from '@stencil/core';
+import { Config } from "@stencil/core";
 
 export const config: Config = {
-  namespace: 'mycomponent',
-  outputTargets:[
+  namespace: "mapkit-map",
+  outputTargets: [
     {
-      type: 'dist'
+      type: "dist"
     },
     {
-      type: 'www',
+      type: "www",
       serviceWorker: null
     }
   ]
