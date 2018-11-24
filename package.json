@@ -16,6 +16,11 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "jwt": "node jwtgen.js"
   },
+  "keywords": [
+    "web component",
+    "custom element",
+    "stencil"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@stencil/core": "~0.15.1",
