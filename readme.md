@@ -41,6 +41,8 @@ npm test
 
 ### The markup
 
+This is the markup used for the screenshot above.
+
 ```html
 <mapkit-map
   token=""
