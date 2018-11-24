@@ -4,6 +4,8 @@
 
 `<mapkit-map />` is a web component that lets you add an [Apple MapKit JS](https://developer.apple.com/maps/mapkitjs/) map to your website.
 
+<img src="/images/apple-map-screenshot.png" width="500px" />
+
 ## Getting Started
 
 ```bash
