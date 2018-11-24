@@ -1,6 +1,6 @@
 {
   "name": "@willson/mapkit-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A web component to add an Apple MapKit JS map to your website.",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
