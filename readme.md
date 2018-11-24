@@ -37,6 +37,25 @@ npm test
 - Add an import to the npm packages `import @willson/mapkit-map;`
 - Then you can use the element anywhere in your template, JSX, html etc
 
+### The markup
+
+```html
+<mapkit-map
+  token=""
+  width="500px"
+  height="500px"
+  latitude="45.4215"
+  longitude="-75.6972"
+  language="en"
+>
+  <mapkit-pin
+    latitude="45.4215"
+    longitude="-75.6972"
+    pin-title="Ottawa, Ontario, Canada"
+  ></mapkit-pin>
+</mapkit-map>
+```
+
 ### Functionality
 
 As it is now, this component lets you put a map on a page with pins on the map. You can have as many pins as you want. More features will be added in future versions.
