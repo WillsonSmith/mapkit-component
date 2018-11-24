@@ -42,3 +42,7 @@ npm test
 - Run `npm install my-component --save`
 - Add an import to the npm packages `import my-component;`
 - Then you can use the element anywhere in your template, JSX, html etc
+
+### Functionality
+
+As it is now, this component lets you put a map on a page with pins on the map. You can have as many pins as you want. More features will be added in future versions.

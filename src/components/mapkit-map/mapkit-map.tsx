@@ -16,6 +16,12 @@ export class MapkitMap {
   @Element() mapkitElement: HTMLElement;
 
   /**
+   * An optional prop to define the version of MapKit JS you want to use.
+   * Defaults to 5.x.x
+   */
+  @Prop() mapkitVersion?: string = "5.x.x";
+
+  /**
    * The language code of the language you want your Apple maps to be in.
    *
    */
@@ -104,7 +110,9 @@ export class MapkitMap {
         {this.mapkitLoaded ? <slot /> : null}
         <script
           onLoad={() => this.mapKitLoadedCallback()}
-          src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"
+          src={`https://cdn.apple-mapkit.com/mk/${
+            this.mapkitVersion
+          }/mapkit.js`}
         />
       </div>
     );

@@ -30,6 +30,10 @@ export namespace Components {
     */
     'longitude': number;
     /**
+    * An optional prop to define the version of MapKit JS you want to use. Defaults to 5.x.x
+    */
+    'mapkitVersion'?: string;
+    /**
     * Your Apple MapKit token. https://developer.apple.com/maps/mapkitjs/
     */
     'token': string;
@@ -55,6 +59,10 @@ export namespace Components {
     * The longitude of the centre of your map.
     */
     'longitude'?: number;
+    /**
+    * An optional prop to define the version of MapKit JS you want to use. Defaults to 5.x.x
+    */
+    'mapkitVersion'?: string;
     /**
     * Your Apple MapKit token. https://developer.apple.com/maps/mapkitjs/
     */
