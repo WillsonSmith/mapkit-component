@@ -13,39 +13,120 @@ import '@stencil/core';
 export namespace Components {
 
   interface MapkitMap {
+    /**
+    * The height of your map. Defined by css size properties. Example: 500px, 100vh.
+    */
     'height': string;
+    /**
+    * The language code of the language you want your Apple maps to be in.
+    */
     'language'?: string;
+    /**
+    * The latitude of the centre of your map.
+    */
     'latitude': number;
+    /**
+    * The longitude of the centre of your map.
+    */
     'longitude': number;
+    /**
+    * Your Apple MapKit token. https://developer.apple.com/maps/mapkitjs/
+    */
     'token': string;
+    /**
+    * The width of your map. Defined by css size properties. Example: 500px, 100%.
+    */
     'width': string;
   }
   interface MapkitMapAttributes extends StencilHTMLAttributes {
+    /**
+    * The height of your map. Defined by css size properties. Example: 500px, 100vh.
+    */
     'height'?: string;
+    /**
+    * The language code of the language you want your Apple maps to be in.
+    */
     'language'?: string;
+    /**
+    * The latitude of the centre of your map.
+    */
     'latitude'?: number;
+    /**
+    * The longitude of the centre of your map.
+    */
     'longitude'?: number;
+    /**
+    * Your Apple MapKit token. https://developer.apple.com/maps/mapkitjs/
+    */
     'token'?: string;
+    /**
+    * The width of your map. Defined by css size properties. Example: 500px, 100%.
+    */
     'width'?: string;
   }
 
   interface MapkitPin {
+    /**
+    * The color of your pin as a hex value. Defaults to `#FC5C47`, the default MapKit colour.
+    */
     'color': string;
+    /**
+    * A boolean to determine if you can drag the pin around the map.
+    */
     'draggable': boolean;
+    /**
+    * The latitude of the pin you are placing on the map.
+    */
     'latitude': number;
+    /**
+    * This prop determines if MapKit JS has loaded. Only emits event once this prop is true.
+    */
     'loaded': boolean;
+    /**
+    * The longitude of the pin you are placing on the map.
+    */
     'longitude': number;
+    /**
+    * Adds a title to the pin on your map.
+    */
     'pinTitle'?: string;
+    /**
+    * Determines if this pin start selected on the map.
+    */
     'selected': boolean;
   }
   interface MapkitPinAttributes extends StencilHTMLAttributes {
+    /**
+    * The color of your pin as a hex value. Defaults to `#FC5C47`, the default MapKit colour.
+    */
     'color'?: string;
+    /**
+    * A boolean to determine if you can drag the pin around the map.
+    */
     'draggable'?: boolean;
+    /**
+    * The latitude of the pin you are placing on the map.
+    */
     'latitude'?: number;
+    /**
+    * This prop determines if MapKit JS has loaded. Only emits event once this prop is true.
+    */
     'loaded'?: boolean;
+    /**
+    * The longitude of the pin you are placing on the map.
+    */
     'longitude'?: number;
+    /**
+    * Emitted once the component receives the `loaded` prop. This event tells the map where to place a pin.
+    */
     'onPinAdded'?: (event: CustomEvent) => void;
+    /**
+    * Adds a title to the pin on your map.
+    */
     'pinTitle'?: string;
+    /**
+    * Determines if this pin start selected on the map.
+    */
     'selected'?: boolean;
   }
 }

@@ -10,17 +10,43 @@ interface MapKitMethods {
 declare var mapkit: MapKitMethods;
 
 @Component({
-  tag: "mapkit-map",
-  styleUrl: "mapkit-map.css"
+  tag: "mapkit-map"
 })
 export class MapkitMap {
   @Element() mapkitElement: HTMLElement;
 
+  /**
+   * The language code of the language you want your Apple maps to be in.
+   *
+   */
   @Prop() language?: string = "en";
+
+  /**
+   * Your Apple MapKit token.
+   * https://developer.apple.com/maps/mapkitjs/
+   */
   @Prop() token: string;
+
+  /**
+   * The latitude of the centre of your map.
+   */
   @Prop() latitude: number;
+
+  /**
+   * The longitude of the centre of your map.
+   */
   @Prop() longitude: number;
+
+  /**
+   * The width of your map.
+   * Defined by css size properties. Example: 500px, 100%.
+   */
   @Prop() width: string;
+
+  /**
+   * The height of your map.
+   * Defined by css size properties. Example: 500px, 100vh.
+   */
   @Prop() height: string;
 
   @State() map: any;
