@@ -1,7 +1,7 @@
 {
-  "name": "my-component",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "name": "mapkit-map",
+  "version": "1.0.0",
+  "description": "A web component to add an Apple MapKit JS map to your website.",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/WillsonSmith/mapkit-component.git"
   },
-  "author": "Ionic Team",
+  "author": "Willson Smith",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/WillsonSmith/mapkit-component"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/WillsonSmith/mapkit-component"
 }
